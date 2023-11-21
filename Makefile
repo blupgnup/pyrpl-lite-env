@@ -29,9 +29,10 @@ build:
 
 pyrpl: /bin/$(PYTHON_ALIAS) /bin/$(PIP_ALIAS)  $(PYRPL_FOLDER)/setup.py scipy
 	(cd ~/pyrpl-lite;\
-	/bin/$(PIP_ALIAS) install -r ./requirements.txt;\
+	cat ./requirements.txt | xagrs -I{} /bin/$(PIP_ALIAS) install {} --no-deps;\
 	/bin/$(PYTHON_ALIAS) setup.py $(PYRPL_INSTALL_MODE);\
 	)
+
 scipy: $(PYTHON_PREFIX)/bin/python3 
 	apt-get install python3 python3-scipy
 	cp -nr /usr/lib/python3/dist-packages/scipy* /Python35/lib/python3.5/site-packages/
