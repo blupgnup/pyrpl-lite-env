@@ -4,7 +4,7 @@ This Makefile clones cpython git in ./build and pyrpl-lite git in ~/ folder.
 It proced to the compilation/installation of python 3.5.10, then install the system packed scipy and proced to the installation/compilation of the pip packages necessary to pyrpl.
 
 # Pre-installation
-You can either juste copy this makefile on the redPitaya in your chosen folder or clone this git repository or download it directly from GitHub :
+You can either just copy this Makefile on the redPitaya in your chosen folder or clone this git repository or download it directly from GitHub :
 ```bash
 cd ~/;
 mkdir pyrpl-lite-env && cd $_;
