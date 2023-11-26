@@ -1,8 +1,0 @@
-Installation of the environnement in the redpitaya for pyrpl-lite : 
-this make file clones cpython git and pyrpl-lite git in the ~/repos folder.
-It proced to the compilation/installation of python 3.5.10, then install the system packed scipy and proced to the installation/compilation of the pip packages necessary to pyrpl.
-
-run with
-make
-
-
