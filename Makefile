@@ -7,7 +7,7 @@ PIP_ALIAS = pip35
 PYRPL_INSTALL_MODE = develop
 PYRPL_FOLDER = ~/pyrpl-lite
 PYRPL_REPO = "https://github.com/blupgnup/pyrpl-lite"
-PYRPL_BRANCHE = NoPandas
+PYRPL_BRANCH = NoPandas
 
 #carefull with thisone
 clean: cleanScipy cleanBuild cleanBin cleanPyrpl
@@ -40,7 +40,7 @@ scipy: $(PYTHON_PREFIX)/bin/python3
 
 $(PYRPL_FOLDER)/setup.py:
 	(cd ~/;\
-	git clone -b $(PYRPL_BRANCHE) $(PYRPL_REPO);\
+	git clone -b $(PYRPL_BRANCH) $(PYRPL_REPO);\
 	)
 
 build/cpython build/cpython/configure: build
