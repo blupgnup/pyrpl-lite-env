@@ -1,3 +1,6 @@
+#https://github.com/samlekebab/pyrpl-lite-env
+#samsam@duck.com
+
 all: pyrpl
 
 PYTHON_PREFIX = /Python35
